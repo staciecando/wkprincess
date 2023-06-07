@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+  </style>
+<style>
+
+ 
+.material-symbols-rounded{
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 500,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+
+*{
+  font-family: 'Nunito', sans-serif;
+  box-sizing: border-box;
+}
+.phone-screen{
+  position:relative;
+  width:375px;
+  height:750px;
+  border-radius:20px;
+  background-color:rgb(234, 205, 230);
+  box-shadow: 1px 1px 20px 1px rgb(201, 201, 201);
+  
+}
+main{
+  margin: 20px auto 0px;
+  width:300px;
+  height:660px;
+}
+
+
+h1{
+  display: inline-block;
+  margin:70px auto 100px;
+  font-size:40px;
+  color:rgb(113, 79, 109);
+}
+
+
+     @keyframes h1{
+      from{
+        transform:scale(0.7);
+      }
+      to{
+        transform:scale(1);
+      }
+     }
+     h1{
+      animation:h1 1s ease-in-out;
+     }
+
+
+input{
+  margin-bottom:6px;
+  width:300px;
+  padding:15px;
+  border-radius: 5px;
+  font-size:13px;
+}
+button{
+  margin-top:30px;
+  margin-bottom:90px;
+  width:300px;
+  padding:20px;
+  border-radius: 10px;
+  font-size:13px;
+  background-color:rgb(123, 58, 123);
+  box-shadow: 1px 1px 12px 1px rgb(190, 30, 230,0.4);
+  color:white;
+  font-size:15px;
+  border: transparent;
+  cursor:pointer;
+}
+.forgot-pw{
+  font-size:13px;
+  text-decoration: underline;
+  color:rgb(101, 59, 101, 0.8);
+}
+  
+  
+</style>
+<body>
+  <div class="phone-screen">
+    <main>
+     <h1>Ready to boost your esteem?</h1>
+      <input required placeholder="Email or phone number" type="email">
+      <input type="password" placeholder="Password" >
+      <button class="login"><a href="home_page.html" class="login">Log In</a></button>
+      <span class="forgot-pw">Forgot password?</span>
+
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel ="stylesheet" href="css/style.css">
+  <link rel ="stylesheet" href="components/icon-row.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <title>start_page</title>
+</head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+  </style>
+  
+ <style>
+  
+  .icon__chat .material-symbols-rounded{
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 500,
+    'GRAD' 0,
+    'opsz' 48
+  }
+  </style>
+<style>
+  a{
+    text-decoration: none;
+    color:rgb(59, 59, 59);
+    }
+  .material-symbols-rounded{
+  font-size:30px;
+  color:rgb(255, 255, 255);
+  }
+ 
+.material-symbols-rounded{
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 500,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+
+*{
+  font-family: 'Nunito', sans-serif;
+  box-sizing: border-box;
+}
+.phone-screen{
+  position:relative;
+  width:375px;
+  height:750px;
+  border-radius:20px;
+  background-color:  rgb(232, 214, 239);
+  box-shadow: 1px 1px 20px 1px rgb(201, 201, 201);
+  display:flex;
+}
+main{
+  margin: 20px auto 0px;
+  width:350px;
+  height:660px;
+}
+.time-row{
+  position:relative;
+  width:100%;
+  height:20px;
+  display:flex;
+  align-items: center;
+}
+.time{
+  font-family: 'Courier New', Courier, monospace;
+  font-size:11px;
+}
+.right__icon{
+  display:flex;
+  align-items: center;
+  justify-content: space-evenly;
+  position:absolute;
+  right:0;
+}
+.icon__signal{
+  width:15px;
+  height:15px;
+  font-size: 15px;
+  display:inline-block;
+}
+.icon__wifi{
+  width:15px;
+  height:15px;
+  font-size:15px;
+  display:inline-block;
+  margin:0 8px;
+}
+.icon__battery{
+  width:15px;
+  height:15px;
+  font-size:15px;
+  display:inline-block;
+}
+#search-column{
+  position:relative;
+ width:350px;
+ height:100px;
+ align-items: center;
+ display:flex;
+}
+.home__text{
+  font-size:24px;
+  color:rgb(129, 129, 129);
+  font-weight:600;
+}
+.home__icon__search{
+  position:absolute;
+  right:50px;
+  width:30px;
+  height:30px;
+  color:rgb(129, 129, 129);
+  display:inline-block;
+}
+.home__icon__setting{
+  position:absolute;
+  right:0;
+  width:30px;
+  height:30px;
+  color:rgb(129, 129, 129);
+  display:inline-block;
+}
+#convo-list{
+  width:350px;
+  height:480px;
+  display:inline-block;
+  border-radius:10px;
+  box-shadow: 1px 1px 12px 1px rgb(189, 189, 189, 0.5);
+  background-color: rgb(254, 254, 254);
+
+}
+.friend__list__indi{
+  position:relative;
+  width:350px;
+  height:auto;
+  display: flex;
+  padding:10px;
+}
+.friend__list__indi:first-child{
+  padding-top:15px;
+}
+.friend__list__indi:first-child:hover{
+background-color: rgb(249, 223, 223);
+}
+.friend__pic{
+  width:60px;
+  height:60px;
+  border: 1px solid rgb(181, 181, 181);
+  display:inline-block;
+  border-radius:20px;
+  margin-right:15px;
+  object-fit:cover;
+}
+.friend__name__recent{
+  height:60px;
+  width:200px;
+  display:inline-block;
+}
+.friend__name__is{
+  position:absolute;
+  top:20px;
+  font-weight: 800;
+}
+.recent__convo{
+  position:absolute;
+  bottom:10px;
+  color:grey;
+}
+hr{
+  border:0.5px solid rgb(170, 170, 170,0.5);
+}
+
+
+.icon-row{
+  position:absolute;
+  bottom:0px;
+}
+
+
+</style> 
+<body>
+  <div class="phone-screen">
+    <main>
+      <section class=" time-row">
+        <span class="time">16:39pm</span>
+        <span class="right__icon">
+          <span class="icon__signal"><span class="icon__signal material-symbols-rounded">
+            signal_cellular_alt
+            </span></span>
+          <span class="icon__wifi material-symbols-rounded">
+            wifi
+            </span>
+         <span class="icon__battery material-symbols-rounded">
+            battery_horiz_075
+            </span>
+        </span>
+        </section>
+      <!-- ========SEARCH ROW========= -->
+      <section id ="search-column">
+        <p class="home__text">Chat</p>
+        <span class="home__icon__search material-symbols-rounded">
+          search
+          </span>
+        <span class="home__icon__setting material-symbols-rounded">
+          settings
+          </span>
+      </section>
+<!-- ============CONVERSATIONs LIST=============== -->
+   
+      <section id="convo-list">
+         <div class="friend__list__indi">
+          <a href="convo_page.html">
+          <span class="friend__pic"><img src="img/girl10.jpg" class="friend__pic"></span>
+          <span class="friend__name__recent">
+         <span class="friend__name__is">Sam</span>
+         <span class="recent__convo">hey how are you doing?</span>
+        </a>
+      </div> 
+
+      </span>
+        <hr>
+         <div class="friend__list__indi">
+          <span class="friend__pic"><img src="img/girl3.jpg" class="friend__pic"></span>
+          <span class="friend__name__recent">
+         <span class="friend__name__is">Sarah</span>
+         <span class="recent__convo">Thanks</span>
+          </div>
+      </span>
+        <hr>
+         <div class="friend__list__indi">
+          <span class="friend__pic"><img src="img/girl4.jpeg" class="friend__pic"></span>
+          <span class="friend__name__recent">
+         <span class="friend__name__is">Michelle</span>
+         <span class="recent__convo">good!</span>
+          </div>
+      </span>
+        <hr>
+         <div class="friend__list__indi">
+          <span class="friend__pic"><img src="img/girl5.jpeg" class="friend__pic"></span>
+          <span class="friend__name__recent">
+         <span class="friend__name__is">Kelly</span>
+         <span class="recent__convo">AWeSOME</span>
+          </div>
+      </span>
+        <hr>
+         <div class="friend__list__indi">
+          <span class="friend__pic"><img src="img/girl6.jpeg" class="friend__pic"></span>
+          <span class="friend__name__recent">
+         <span class="friend__name__is">Liz</span>
+         <span class="recent__convo">:)</span>
+          </div>
+      </span>
+    
+      </section>
+    </main>
+    <!-- =======MENU ROW====== -->
+    <div class="icon-row"> 
+      <a class="icon__home icon__row-icon" href="home_page.html">
+        <span class="material-symbols-rounded">
+        home
+        </span></a>
+      <a class="icon__chat icon__row-icon" href="chat_page.html"><span class="material-symbols-rounded">
+        sms
+        </span>
+        </a>
+      <a class="icon__group icon__row-icon" href="group_page.html"><span class="material-symbols-rounded">
+        group
+        </span>
+        </a>
+      <a class="icon__profile icon__row-icon" href="profile_page.html"><span class="material-symbols-rounded">
+        person
+        </span></a>
+    </div>
+
+
+   
+  </div>
+
+</body>
+</html>
